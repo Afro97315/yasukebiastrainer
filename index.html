@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yasuke Bias Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Yasuke Bias Trainer</h1>
+    <p>Agent IA afrocentré - Analyse et reformulation éthique</p>
+  </header>
+  <main>
+    <section class="input-section">
+      <textarea id="inputText" placeholder="Colle ou écris ton texte ici..."></textarea>
+      <div class="buttons">
+        <button onclick="analyzeText()">Analyser</button>
+        <button onclick="exportMarkdown()">Exporter Markdown</button>
+        <button onclick="exportPDF()">Exporter PDF</button>
+      </div>
+    </section>
+
+    <section class="results-section" hidden>
+      <h2>Résultats de l'analyse</h2>
+      <div id="score"></div>
+      <div id="biases"></div>
+      <div id="missing"></div>
+      <h3>Reformulation afrocentrée</h3>
+      <div id="reformulation"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Yasuke Bias Trainer – Afro-Japonais & Futuriste</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@latest/dist/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
